@@ -1,0 +1,14 @@
+venv/
+.env/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore IDE/editor files
+.vscode/
+
+
+# Ignore Postman collection files (optional, if you have Postman collections in the project)
+*.postman_collection.json
