@@ -1,0 +1,1 @@
+This project uses AI model to remote background from the image
