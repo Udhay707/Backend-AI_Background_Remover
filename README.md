@@ -43,37 +43,12 @@ pip install -r requirements.txt
 python app.py
 The server will be running at http://127.0.0.1:5000/.
 ```
-### 6. Test the API with Postman or any HTTP client:
-POST /remove-bg to upload an image and get the processed image (background removed).
-Usage
-Endpoint: /remove-bg
-
-Method: POST
-
-Request:
-You need to send an image file (JPEG, PNG) in the request body.
-Example request in Postman:
-URL: http://127.0.0.1:5000/remove-bg
-Method: POST
-Body: form-data, with key image and value set to the image file.
-Response:
-
-The response will contain the processed image as a base64-encoded string.
-Example:
-json
-Copy code
-{
-    "image": "iVBORw0KGgoAAAANS..."
-}
-You can convert this base64 string back to an image using Postman or by decoding it programmatically.
-
-Contributions
-Feel free to fork the repo and submit pull requests. Any improvements, features, or bug fixes are welcome!
-
-Guidelines for contributing:
-Fork the repository.
-Clone your fork to your local machine.
-Create a new branch: git checkout -b feature-branch.
-Commit your changes: git commit -m 'Add new feature'.
-Push to the branch: git push origin feature-branch.
-Create a pull request.
+## Docker
+### 1. Build Image
+```bash
+sudo docker build -t backend-ai-bg-remover .
+```
+### 2. Create a container and execute
+```bash
+docker run -d -p 5000:5000 --name backend-bg-remover-container backend-ai-bg-remover
+```
