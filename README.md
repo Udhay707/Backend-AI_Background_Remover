@@ -19,30 +19,31 @@ This project provides an API for removing the background of images using AI-base
 ```bash
 git clone https://github.com/Udhay707/Backend-AI_Background_Remover.git
 cd Backend-AI_Background_Remover
+```
 
-###2. Create a virtual environment:
+### 2. Create a virtual environment:
 ```bash
 python3 -m venv venv
 ###3. Activate the virtual environment:
 For Linux/macOS:
-
+```
 ```bash
 source venv/bin/activate
 For Windows:
-
+```
 ```bash
 venv\Scripts\activate
-
-###4. Install dependencies:
+```
+### 4. Install dependencies:
 ```bash
 pip install -r requirements.txt
-
-###5. Run the Flask app:
+```
+### 5. Run the Flask app:
 ```bash
 python app.py
 The server will be running at http://127.0.0.1:5000/.
-
-###6. Test the API with Postman or any HTTP client:
+```
+### 6. Test the API with Postman or any HTTP client:
 POST /remove-bg to upload an image and get the processed image (background removed).
 Usage
 Endpoint: /remove-bg
@@ -50,7 +51,6 @@ Endpoint: /remove-bg
 Method: POST
 
 Request:
-
 You need to send an image file (JPEG, PNG) in the request body.
 Example request in Postman:
 URL: http://127.0.0.1:5000/remove-bg
@@ -77,4 +77,3 @@ Create a new branch: git checkout -b feature-branch.
 Commit your changes: git commit -m 'Add new feature'.
 Push to the branch: git push origin feature-branch.
 Create a pull request.
-
