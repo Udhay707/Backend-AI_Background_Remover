@@ -12,7 +12,7 @@ This project provides an API for removing the background of images using AI-base
 - Flask
 - ONNX Runtime (for running models)
   
-## Setup
+## Build Project
 
 ### 1. Clone the repository:
 
@@ -43,12 +43,22 @@ pip install -r requirements.txt
 python app.py
 The server will be running at http://127.0.0.1:5000/.
 ```
-## Docker
+## Build Docker Image
 ### 1. Build Image
 ```bash
-sudo docker build -t backend-ai-bg-remover .
+docker build -t backend-ai-bg-remover .
 ```
 ### 2. Create a container and execute
 ```bash
 docker run -d -p 5000:5000 --name backend-bg-remover-container backend-ai-bg-remover
+```
+
+## Execute docker image from Repo
+### 1. Pull image
+```bash
+docker pull udhay707/backend-ai-bg-remover
+```
+### 2. Create a container and execute
+```bash
+docker run -d -p 5000:5000 --name backend-bg-remove-container udhay707/backend-ai-bg-remover
 ```
