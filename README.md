@@ -2,6 +2,7 @@
 
 This project provides an API for removing the background of images using AI-based models. The backend is built with Flask, and it allows users to upload images, process them, and return the image with the background removed.
 
+
 ## Features
 
 - **POST `/remove-bg`**: Upload an image and get the background removed.
