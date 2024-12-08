@@ -3,8 +3,11 @@ from rembg import remove
 from PIL import Image
 import io
 import base64
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app)
 
 @app.route('/remove-bg', methods=['POST'])
 def remove_bg():
